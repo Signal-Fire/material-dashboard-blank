@@ -42,12 +42,13 @@ material-dashboard-react
     │       └── material-dashboard-react.js
     ├── components
     │   ├── Card
-    │   │   ├── Card.js
-    │   │   ├── CardAvatar.js
+    │   │   ├── Card.tsx
+    │   │   ├── CardAvatar.tsx
     │   │   ├── CardBody.js
     │   │   ├── CardFooter.js
     │   │   ├── CardHeader.js
-    │   │   └── CardIcon.js
+    │   │   ├── CardIcon.js
+    │   │   └── index.ts
     │   ├── CustomButtons
     │   │   └── Button.js
     │   ├── CustomInput

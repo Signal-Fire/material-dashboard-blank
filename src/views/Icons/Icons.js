@@ -6,9 +6,8 @@ import Hidden from "@material-ui/core/Hidden";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
-import Card from "components/Card/Card.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardBody from "components/Card/CardBody.js";
+
+import { Card, CardHeader, Cardbody } from "components/Card";
 
 import styles from "assets/jss/material-dashboard-react/views/iconsStyle.js";
 
