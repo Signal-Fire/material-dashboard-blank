@@ -7,7 +7,7 @@ import { hexToRgb } from "utils/colors";
 
 const useStyles = makeStyles((theme) => ({
   cardIcon: {
-    "&$warningCardHeader,&$successCardHeader,&$dangerCardHeader,&$infoCardHeader,&$primaryCardHeader,&$roseCardHeader": {
+    "&$warningCardHeader,&$successCardHeader,&$dangerCardHeader,&$infoCardHeader,&$primaryCardHeader": {
       borderRadius: "3px",
       backgroundColor: theme.palette.grey["100"],
       padding: "15px",

@@ -5,14 +5,12 @@ import {
   successBoxShadow,
   warningBoxShadow,
   dangerBoxShadow,
-  roseBoxShadow,
   whiteColor,
   blackColor,
   grayColor,
   infoColor,
   successColor,
   dangerColor,
-  roseColor,
   primaryColor,
   warningColor,
   hexToRgb,
@@ -72,11 +70,6 @@ const snackbarContentStyle = {
     color: whiteColor,
     ...primaryBoxShadow,
   },
-  rose: {
-    backgroundColor: roseColor[3],
-    color: whiteColor,
-    ...roseBoxShadow,
-  },
   message: {
     padding: "0",
     display: "block",
@@ -114,9 +107,6 @@ const snackbarContentStyle = {
   },
   primaryIcon: {
     color: primaryColor[3],
-  },
-  roseIcon: {
-    color: roseColor[3],
   },
   iconMessage: {
     paddingLeft: "50px",
