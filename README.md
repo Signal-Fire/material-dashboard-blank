@@ -69,7 +69,8 @@ material-dashboard-react
     │   │   ├── Snackbar.js
     │   │   └── SnackbarContent.js
     │   ├── Table
-    │   │   └── Table.js
+    │   │   ├── Table.tsx
+    │   │   └── index.ts
     │   ├── Tasks
     │   │   └── Tasks.js
     │   └── Typography

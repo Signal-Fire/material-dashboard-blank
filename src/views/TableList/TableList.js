@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
-import Table from "components/Table/Table.js";
+import { Table } from "components/Table";
 
 import { Card, CardHeader, CardBody } from "components/Card";
 import { Typography } from "@material-ui/core";
