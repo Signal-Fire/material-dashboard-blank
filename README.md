@@ -44,10 +44,10 @@ material-dashboard-react
     │   ├── Card
     │   │   ├── Card.tsx
     │   │   ├── CardAvatar.tsx
-    │   │   ├── CardBody.js
-    │   │   ├── CardFooter.js
-    │   │   ├── CardHeader.js
-    │   │   ├── CardIcon.js
+    │   │   ├── CardBody.tsx
+    │   │   ├── CardFooter.tsx
+    │   │   ├── CardHeader.tsx
+    │   │   ├── CardIcon.tsx
     │   │   └── index.ts
     │   ├── CustomButtons
     │   │   └── Button.js

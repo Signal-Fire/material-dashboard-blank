@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme) => ({
     padding: "0",
     boxShadow:
       "0 16px 38px -12px rgba(" +
-      theme.palette.primary.dark +
+      theme.palette.common.black +
       ", 0.56), 0 4px 25px 0px rgba(" +
-      theme.palette.primary.dark +
+      theme.palette.common.black +
       ", 0.12), 0 8px 10px -5px rgba(" +
-      theme.palette.primary.dark +
+      theme.palette.common.black +
       ", 0.2)",
     "&$cardAvatarPlain": {
       marginTop: "0",
