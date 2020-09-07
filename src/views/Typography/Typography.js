@@ -56,7 +56,7 @@ export default function TypographyPage() {
   return (
     <Card>
       <CardHeader color="primary">
-        <Typography variant="h4">Material Dashboard Heading</Typography>
+        <Typography variant="h4">Heading</Typography>
         <Typography className={classes.cardCategoryWhite}>
           Created using Roboto Font Family
         </Typography>
@@ -64,27 +64,27 @@ export default function TypographyPage() {
       <CardBody>
         <div className={classes.typo}>
           <div className={classes.note}>Header 1</div>
-          <Typography variant="h1">The Life of Material Dashboard</Typography>
+          <Typography variant="h1">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Header 2</div>
-          <Typography variant="h2">The Life of Material Dashboard</Typography>
+          <Typography variant="h2">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Header 3</div>
-          <Typography variant="h3">The Life of Material Dashboard</Typography>
+          <Typography variant="h3">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Header 4</div>
-          <Typography variant="h4">The Life of Material Dashboard</Typography>
+          <Typography variant="h4">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Header 5</div>
-          <Typography variant="h5">The Life of Material Dashboard</Typography>
+          <Typography variant="h5">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Header 6</div>
-          <Typography variant="h6">The Life of Material Dashboard</Typography>
+          <Typography variant="h6">Some lovely text</Typography>
         </div>
         <div className={classes.typo}>
           <div className={classes.note}>Paragraph</div>
