@@ -14,6 +14,7 @@ import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 import Snackbar from "components/Snackbar/Snackbar.js";
 
 import { Card, CardHeader, CardBody } from "components/Card";
+import { Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -122,12 +123,12 @@ export default function Notifications() {
   return (
     <Card>
       <CardHeader color="primary">
-        <h4 className={classes.cardTitleWhite}>Notifications</h4>
+        <Typography variant="h4">Notifications</Typography>
       </CardHeader>
       <CardBody>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>
-            <h5>Notifications Style</h5>
+            <Typography variant="h5">Notifications Style</Typography>
             <br />
             <SnackbarContent message={"This is a plain notification"} />
             <SnackbarContent
@@ -148,7 +149,7 @@ export default function Notifications() {
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={6}>
-            <h5>Notifications States</h5>
+            <Typography variant="h5">Notifications States</Typography>
             <br />
             <SnackbarContent
               message={
@@ -191,11 +192,11 @@ export default function Notifications() {
         <br />
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={6} style={{ textAlign: "center" }}>
-            <h5>
+            <Typography variant="h5">
               Notifications Places
               <br />
               <small>Click to view notifications</small>
-            </h5>
+            </Typography>
           </GridItem>
         </GridContainer>
         <GridContainer justify="center">

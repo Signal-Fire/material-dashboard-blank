@@ -1,6 +1,9 @@
 import React from "react";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
+const blackColor = "#555555";
+const greyColor = "#dfdfdf";
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -28,11 +31,54 @@ const theme = createMuiTheme({
       light: "#00acc1",
     },
     common: {
-      black: "#000000",
+      black: blackColor,
       white: "#FFFFFF",
     },
     grey: {
-      "100": "#dfdfdf",
+      "100": greyColor,
+      "700": "#777",
+    },
+  },
+  typography: {
+    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    fontSize: 12,
+    fontWeightRegular: "lighter",
+    h1: {
+      fontSize: "38px",
+      minHeight: "auto",
+      marginBottom: "3px",
+      textDecoration: "none",
+    },
+    h2: {
+      fontSize: "34px",
+      minHeight: "auto",
+      marginBottom: "3px",
+      textDecoration: "none",
+    },
+    h3: {
+      fontSize: "28px",
+      minHeight: "auto",
+      color: blackColor,
+      marginBottom: "3px",
+      textDecoration: "none",
+    },
+    h4: {
+      fontSize: "20px",
+      minHeight: "auto",
+      marginBottom: "3px",
+      textDecoration: "none",
+    },
+    h5: {
+      fontSize: "16px",
+      minHeight: "auto",
+      marginBottom: "3px",
+      textDecoration: "none",
+    },
+    h6: {
+      fontSize: "12px",
+      minHeight: "auto",
+      marginBottom: "3px",
+      textDecoration: "none",
     },
   },
 });

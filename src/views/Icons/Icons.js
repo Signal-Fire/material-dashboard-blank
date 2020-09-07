@@ -7,9 +7,10 @@ import Hidden from "@material-ui/core/Hidden";
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
 
-import { Card, CardHeader, Cardbody } from "components/Card";
+import { Card, CardHeader, CardBody } from "components/Card";
 
 import styles from "assets/jss/material-dashboard-react/views/iconsStyle.js";
+import { Typography } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
@@ -20,8 +21,8 @@ export default function Icons() {
       <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>Material Design Icons</h4>
-            <p className={classes.cardCategoryWhite}>
+            <Typography variant="h4">Material Design Icons</Typography>
+            <Typography className={classes.cardCategoryWhite}>
               Handcrafted by our friends from{" "}
               <a
                 href="https://design.google.com/icons/?ref=creativetime"
@@ -29,7 +30,7 @@ export default function Icons() {
               >
                 Google
               </a>
-            </p>
+            </Typography>
           </CardHeader>
           <CardBody>
             <Hidden only={["sm", "xs"]}>
@@ -43,7 +44,7 @@ export default function Icons() {
             </Hidden>
             <Hidden only={["lg", "md"]}>
               <GridItem xs={12} sm={12} md={6}>
-                <h5>
+                <Typography variant="h5">
                   The icons are visible on Desktop mode inside an iframe. Since
                   the iframe is not working on Mobile and Tablets please visit
                   the icons on their original page on Google. Check the
@@ -53,7 +54,7 @@ export default function Icons() {
                   >
                     Material Icons
                   </a>
-                </h5>
+                </Typography>
               </GridItem>
             </Hidden>
           </CardBody>

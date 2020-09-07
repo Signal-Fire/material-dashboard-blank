@@ -7,6 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import Table from "components/Table/Table.js";
 
 import { Card, CardHeader, CardBody } from "components/Card";
+import { Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -21,21 +22,6 @@ const styles = {
       color: "#FFFFFF",
     },
   },
-  cardTitleWhite: {
-    color: "#FFFFFF",
-    marginTop: "0px",
-    minHeight: "auto",
-    fontWeight: "300",
-    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-    marginBottom: "3px",
-    textDecoration: "none",
-    "& small": {
-      color: "#777",
-      fontSize: "65%",
-      fontWeight: "400",
-      lineHeight: "1",
-    },
-  },
 };
 
 const useStyles = makeStyles(styles);
@@ -47,10 +33,10 @@ export default function TableList() {
       <GridItem xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-            <p className={classes.cardCategoryWhite}>
+            <Typography variant="h4">Simple Table</Typography>
+            <Typography className={classes.cardCategoryWhite}>
               Here is a subtitle for this table
-            </p>
+            </Typography>
           </CardHeader>
           <CardBody>
             <Table
@@ -71,12 +57,10 @@ export default function TableList() {
       <GridItem xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
-            </h4>
-            <p className={classes.cardCategoryWhite}>
+            <Typography variant="h4">Table on Plain Background</Typography>
+            <Typography className={classes.cardCategoryWhite}>
               Here is a subtitle for this table
-            </p>
+            </Typography>
           </CardHeader>
           <CardBody>
             <Table
