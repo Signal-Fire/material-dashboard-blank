@@ -2,9 +2,9 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
-// core components
-import CustomInput from "components/CustomInput/CustomInput.js";
-import Button from "components/CustomButtons/Button.js";
+// core
+import { CustomInput } from "components/CustomInput";
+
 import {
   Card,
   CardHeader,
@@ -14,7 +14,7 @@ import {
 } from "components/Card";
 
 import avatar from "assets/img/faces/marc.jpg";
-import { Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -150,7 +150,9 @@ export default function UserProfile() {
               </Grid>
             </CardBody>
             <CardFooter>
-              <Button color="primary">Update Profile</Button>
+              <Button variant="outlined" color="primary">
+                Update Profile
+              </Button>
             </CardFooter>
           </Card>
         </Grid>
@@ -169,7 +171,7 @@ export default function UserProfile() {
                 human foundation in truth And I love you like Kanye loves Kanye
                 I love Rick Owens’ bed design but the back is...
               </Typography>
-              <Button color="primary" round>
+              <Button variant="outlined" color="primary">
                 Follow
               </Button>
             </CardBody>

@@ -52,7 +52,8 @@ material-dashboard-react
     │   ├── CustomButtons
     │   │   └── Button.js
     │   ├── CustomInput
-    │   │   └── CustomInput.js
+    │   │   ├── CustomInput.tsx
+    │   │   └── index.ts
     │   ├── CustomTabs
     │   │   └── CustomTabs.js
     │   ├── Footer

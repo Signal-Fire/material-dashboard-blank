@@ -7,12 +7,11 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddAlert from "@material-ui/icons/AddAlert";
 
-import Button from "components/CustomButtons/Button.js";
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 import Snackbar from "components/Snackbar/Snackbar.js";
 
 import { Card, CardHeader, CardBody } from "components/Card";
-import { Grid, Typography } from "@material-ui/core";
+import { Button, Grid, Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
