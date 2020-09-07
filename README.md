@@ -57,9 +57,6 @@ material-dashboard-react
     │   │   └── CustomTabs.js
     │   ├── Footer
     │   │   └── Footer.js
-    │   ├── Grid
-    │   │   ├── GridContainer.js
-    │   │   └── GridItem.js
     │   ├── Navbars
     │   │   ├── AdminNavbarLinks.js
     │   │   ├── Navbar.js

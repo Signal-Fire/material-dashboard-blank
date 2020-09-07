@@ -1,13 +1,10 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
 import { Table } from "components/Table";
 
 import { Card, CardHeader, CardBody } from "components/Card";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -29,8 +26,8 @@ const useStyles = makeStyles(styles);
 export default function TableList() {
   const classes = useStyles();
   return (
-    <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
+    <Grid container>
+      <Grid item xs={12} sm={12} md={12}>
         <Card>
           <CardHeader color="primary">
             <Typography variant="h4">Simple Table</Typography>
@@ -53,8 +50,8 @@ export default function TableList() {
             />
           </CardBody>
         </Card>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
+      </Grid>
+      <Grid item xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
             <Typography variant="h4">Table on Plain Background</Typography>
@@ -89,7 +86,7 @@ export default function TableList() {
             />
           </CardBody>
         </Card>
-      </GridItem>
-    </GridContainer>
+      </Grid>
+    </Grid>
   );
 }

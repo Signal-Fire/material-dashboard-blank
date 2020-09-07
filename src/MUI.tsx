@@ -81,6 +81,13 @@ const theme = createMuiTheme({
       textDecoration: "none",
     },
   },
+  overrides: {
+    MuiGrid: {
+      root: {
+        padding: "5px",
+      },
+    },
+  },
 });
 
 const MUI: React.FC = ({ children }) => {

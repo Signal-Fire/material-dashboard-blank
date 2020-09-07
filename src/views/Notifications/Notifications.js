@@ -6,15 +6,13 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import AddAlert from "@material-ui/icons/AddAlert";
-// core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
+
 import Button from "components/CustomButtons/Button.js";
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
 import Snackbar from "components/Snackbar/Snackbar.js";
 
 import { Card, CardHeader, CardBody } from "components/Card";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -126,8 +124,8 @@ export default function Notifications() {
         <Typography variant="h4">Notifications</Typography>
       </CardHeader>
       <CardBody>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={6}>
+        <Grid container>
+          <Grid item xs={12} sm={12} md={6}>
             <Typography variant="h5">Notifications Style</Typography>
             <br />
             <SnackbarContent message={"This is a plain notification"} />
@@ -147,8 +145,8 @@ export default function Notifications() {
               close
               icon={AddAlert}
             />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6}>
             <Typography variant="h5">Notifications States</Typography>
             <br />
             <SnackbarContent
@@ -186,23 +184,23 @@ export default function Notifications() {
               close
               color="primary"
             />
-          </GridItem>
-        </GridContainer>
+          </Grid>
+        </Grid>
         <br />
         <br />
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6} style={{ textAlign: "center" }}>
+        <Grid container justify="center">
+          <Grid item xs={12} sm={12} md={6} style={{ textAlign: "center" }}>
             <Typography variant="h5">
               Notifications Places
               <br />
               <small>Click to view notifications</small>
             </Typography>
-          </GridItem>
-        </GridContainer>
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={10} lg={8}>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={4}>
+          </Grid>
+        </Grid>
+        <Grid container justify="center">
+          <Grid item xs={12} sm={12} md={10} lg={8}>
+            <Grid containeer>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -219,8 +217,8 @@ export default function Notifications() {
                   closeNotification={() => setTL(false)}
                   close
                 />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              </Grid>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -237,8 +235,8 @@ export default function Notifications() {
                   closeNotification={() => setTC(false)}
                   close
                 />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              </Grid>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -255,14 +253,14 @@ export default function Notifications() {
                   closeNotification={() => setTR(false)}
                   close
                 />
-              </GridItem>
-            </GridContainer>
-          </GridItem>
-        </GridContainer>
-        <GridContainer justify={"center"}>
-          <GridItem xs={12} sm={12} md={10} lg={8}>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={4}>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+        <Grid container justify={"center"}>
+          <Grid item xs={12} sm={12} md={10} lg={8}>
+            <Grid container>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -279,8 +277,8 @@ export default function Notifications() {
                   closeNotification={() => setBL(false)}
                   close
                 />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              </Grid>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -297,8 +295,8 @@ export default function Notifications() {
                   closeNotification={() => setBC(false)}
                   close
                 />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={4}>
+              </Grid>
+              <Grid item xs={12} sm={12} md={4}>
                 <Button
                   fullWidth
                   color="primary"
@@ -315,10 +313,10 @@ export default function Notifications() {
                   closeNotification={() => setBR(false)}
                   close
                 />
-              </GridItem>
-            </GridContainer>
-          </GridItem>
-        </GridContainer>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
       </CardBody>
     </Card>
   );

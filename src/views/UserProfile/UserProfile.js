@@ -3,8 +3,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 // core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
 import {
@@ -16,7 +14,7 @@ import {
 } from "components/Card";
 
 import avatar from "assets/img/faces/marc.jpg";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 const styles = {
   cardCategoryWhite: {
@@ -43,8 +41,8 @@ export default function UserProfile() {
   const classes = useStyles();
   return (
     <div>
-      <GridContainer>
-        <GridItem xs={12} sm={12} md={8}>
+      <Grid container>
+        <Grid item xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="primary">
               <Typography variant="h4">Edit Profile</Typography>
@@ -53,8 +51,8 @@ export default function UserProfile() {
               </Typography>
             </CardHeader>
             <CardBody>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={5}>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={5}>
                   <CustomInput
                     labelText="Company (disabled)"
                     id="company-disabled"
@@ -65,8 +63,8 @@ export default function UserProfile() {
                       disabled: true,
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={3}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={3}>
                   <CustomInput
                     labelText="Username"
                     id="username"
@@ -74,8 +72,8 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="Email address"
                     id="email-address"
@@ -83,10 +81,10 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
+                </Grid>
+              </Grid>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="First Name"
                     id="first-name"
@@ -94,8 +92,8 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={6}>
                   <CustomInput
                     labelText="Last Name"
                     id="last-name"
@@ -103,10 +101,10 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={4}>
+                </Grid>
+              </Grid>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="City"
                     id="city"
@@ -114,8 +112,8 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="Country"
                     id="country"
@@ -123,8 +121,8 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
+                </Grid>
+                <Grid item xs={12} sm={12} md={4}>
                   <CustomInput
                     labelText="Postal Code"
                     id="postal-code"
@@ -132,10 +130,10 @@ export default function UserProfile() {
                       fullWidth: true,
                     }}
                   />
-                </GridItem>
-              </GridContainer>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={12}>
+                </Grid>
+              </Grid>
+              <Grid container>
+                <Grid item xs={12} sm={12} md={12}>
                   <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
                   <CustomInput
                     labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
@@ -148,15 +146,15 @@ export default function UserProfile() {
                       rows: 5,
                     }}
                   />
-                </GridItem>
-              </GridContainer>
+                </Grid>
+              </Grid>
             </CardBody>
             <CardFooter>
               <Button color="primary">Update Profile</Button>
             </CardFooter>
           </Card>
-        </GridItem>
-        <GridItem xs={12} sm={12} md={4}>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4}>
           <Card profile>
             <CardAvatar profile>
               <a href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -176,8 +174,8 @@ export default function UserProfile() {
               </Button>
             </CardBody>
           </Card>
-        </GridItem>
-      </GridContainer>
+        </Grid>
+      </Grid>
     </div>
   );
 }

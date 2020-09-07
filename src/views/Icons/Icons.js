@@ -3,22 +3,19 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Hidden from "@material-ui/core/Hidden";
-// core components
-import GridItem from "components/Grid/GridItem.js";
-import GridContainer from "components/Grid/GridContainer.js";
 
 import { Card, CardHeader, CardBody } from "components/Card";
 
 import styles from "assets/jss/material-dashboard-react/views/iconsStyle.js";
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles(styles);
 
 export default function Icons() {
   const classes = useStyles();
   return (
-    <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
+    <Grid container>
+      <Grid item xs={12} sm={12} md={12}>
         <Card plain>
           <CardHeader plain color="primary">
             <Typography variant="h4">Material Design Icons</Typography>
@@ -43,7 +40,7 @@ export default function Icons() {
               </iframe>
             </Hidden>
             <Hidden only={["lg", "md"]}>
-              <GridItem xs={12} sm={12} md={6}>
+              <Grid item xs={12} sm={12} md={6}>
                 <Typography variant="h5">
                   The icons are visible on Desktop mode inside an iframe. Since
                   the iframe is not working on Mobile and Tablets please visit
@@ -55,11 +52,11 @@ export default function Icons() {
                     Material Icons
                   </a>
                 </Typography>
-              </GridItem>
+              </Grid>
             </Hidden>
           </CardBody>
         </Card>
-      </GridItem>
-    </GridContainer>
+      </Grid>
+    </Grid>
   );
 }
