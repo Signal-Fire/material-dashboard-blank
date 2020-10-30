@@ -1,6 +1,6 @@
 # Material Dashboard React - Blank Project
 
-This is the repository for a forked version of Material Dashboard React.
+This project is based on [Material Dashboard React](https://github.com/creativetimofficial/material-dashboard-react).
 
 ## Aims
 
