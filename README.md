@@ -1,3 +1,7 @@
+# Material Dashboard React - Blank Project
+
+This is the repository for a forked version of Material Dashboard React.
+
 ## Aims
 
 Material Dashboard React is a fantastic User Interface for representing data in graphs, tables, forms and so on. It allows developers to focus on the retrieval of that data and just plugging it into an already great UI.
